@@ -1,0 +1,143 @@
+@use 'config' as *;
+@use 'utilities' as *;
+
+#cart-container {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 7rem;
+  overflow-x: hidden;
+  position: relative;
+
+  #cart {
+    &-a {
+      grid-column: span 5;
+      height: 15rem;
+      background: url(../img/sale-banner.jpg) no-repeat;
+      background-size: 110%;
+      background-position: bottom;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      h2 {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        &:first-child {
+          font-size: 6rem;
+        }
+
+        &:last-child {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &-b {
+      grid-column: span 1;
+      margin-left: 0.5rem;
+      height: 50rem;
+      background: url(../img/sb2.jpg);
+      background-size: 300%;
+      background-position: bottom right;
+      overflow: hidden;
+      position: relative;
+
+      .side-banner-overlay {
+        position: absolute;
+        top: 0;
+        background-color: $accent-color-2;
+        height: 320px;
+        width: 300px;
+        padding: 1rem;
+      }
+    }
+
+    &-c {
+      grid-column: span 4;
+      margin-right: 0.5rem;
+      overflow-x: hidden;
+      position: relative;
+
+      .cart-list {
+        height: 320px;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          img {
+            height: 150px;
+            width: 150px;
+            margin-right: 1rem;
+          }
+
+          .btn-delete {
+            right: 5%;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-checkout {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+}
+
+// Media Queries
+
+// Tablet
+@media (max-width: 769px) {
+  #cart-container {
+    #cart {
+      &-a {
+        grid-column: span 5;
+      }
+
+      &-b {
+        grid-column: span 2;
+
+        .side-banner-overlay {
+          position: absolute;
+          top: 0;
+          background-color: $accent-color-2;
+          height: 320px;
+          width: 205px;
+          padding: 1rem;
+
+          .section-heading {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &-c {
+        grid-column: span 3;
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 426px) {
+  #cart-container {
+    margin-top: 5rem;
+    height: 80vh;
+
+    #cart {
+      &-a {
+        display: none;
+      }
+      &-b {
+        display: none;
+      }
+      &-c {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

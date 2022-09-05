@@ -1,0 +1,41 @@
+@use 'config' as *;
+@use 'utilities' as *;
+
+// Cart Preview
+.index-preview {
+  background-color: #fff;
+  height: 400px;
+  width: 350px;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  z-index: 2;
+  padding: 1rem;
+  box-shadow: $box-shadow;
+  overflow-x: hidden;
+
+  &-list {
+    height: 300px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0.2rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      box-shadow: $box-shadow-bottom;
+      width: 20rem;
+      position: relative;
+
+      img {
+        height: 100px;
+        width: 100px;
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        background-color: rgba(202, 202, 202, 0.185);
+      }
+    }
+  }
+}

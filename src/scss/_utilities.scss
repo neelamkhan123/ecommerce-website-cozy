@@ -1,0 +1,208 @@
+@use 'config' as *;
+
+.section-title {
+  color: $text-color-dark;
+}
+
+.section-heading {
+  font-family: 'Noto Serif HK', serif;
+  color: $text-color-light;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.para-primary {
+  color: $text-color-light;
+  font-size: 1.5rem;
+}
+
+.para-secondary {
+  color: $text-color-dark;
+}
+
+.product-name {
+  color: $text-color-dark;
+  font-family: 'Noto Serif HK', serif;
+  font-weight: bold;
+}
+
+.logo {
+  font-family: 'Noto Serif HK', serif;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: $primary-color;
+  border-radius: 20px;
+}
+
+.padding-y {
+  padding: 4rem 0;
+}
+
+.green-z {
+  color: $accent-color-2;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.price {
+  text-align: center;
+  color: $text-color-dark;
+}
+
+.preview-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  margin-top: 2rem;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $primary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+// Buttons
+.btn {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: $accent-color-2;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $btn-hover-2;
+  }
+}
+
+.btn-plus {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: $text-color-dark;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-color-2;
+  }
+}
+
+.btn-minus {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: $text-color-dark;
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.btn-delete {
+  color: #333;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.btn-checkout-preview {
+  text-transform: uppercase;
+  width: 200px;
+  background-color: $accent-color-2;
+  color: $text-color-light;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed;
+  top: 390px;
+  right: 80px;
+  z-index: 3;
+
+  &:hover {
+    background-color: $btn-hover-2;
+  }
+}
+
+.btn-wishlist {
+  background-color: $accent-color;
+  border-radius: 50%;
+  color: $text-color-light;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -20px;
+  bottom: 60px;
+
+  &:hover {
+    background-color: $btn-hover-1;
+  }
+}
+
+.saved {
+  background-color: $text-color-dark;
+  color: $text-color-light;
+
+  &:hover {
+    background-color: $text-color-dark;
+  }
+}
+
+.btn-cart {
+  background-color: $accent-color-2;
+  border-radius: 50%;
+  color: $text-color-light;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -20px;
+  bottom: 105px;
+
+  &:hover {
+    background-color: $btn-hover-2;
+  }
+}

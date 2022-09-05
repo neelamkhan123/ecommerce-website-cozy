@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy | Login</title>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <script defer src="./script.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Serif+HK&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <!-- Logo -->
+        <h1 class="logo">Co<span class="green-z">Z</span>y</h1>
+        <!-- User Icons -->
+        <ul class="user-icons">
+          <li class="user-icon">
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="user-icon">
+            <a href="./wishlist.html"><i class="fa-solid fa-heart"></i></a>
+          </li>
+          <li class="user-icon">
+            <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+          </li>
+          <li class="user-icon">
+            <button class="nav-icon"><i class="fa-solid fa-bars"></i></button>
+          </li>
+        </ul>
+      </div>
+      <!-- Navbar -->
+      <nav id="nav">
+        <ul class="navbar">
+          <li>
+            <a href="./home.html" class="title">Home</a>
+            <ul class="sub-nav hidden">
+              <li class="sub-title"><a href="./home.html">Living Room</a></li>
+              <li class="sub-title"><a href="./home.html">Dining Room</a></li>
+              <li class="sub-title"><a href="./home.html">Bedroom</a></li>
+              <li class="sub-title"><a href="./home.html">Kitchen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./garden.html" class="title">Garden</a>
+            <ul class="sub-nav hidden">
+              <li class="sub-title"><a href="./garden.html">Furniture</a></li>
+              <li class="sub-title"><a href="./garden.html">Tools</a></li>
+              <li class="sub-title"><a href="./garden.html">Plants</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./kitchen.html" class="title">Kitchen</a>
+            <ul class="sub-nav hidden">
+              <li class="sub-title"><a href="./kitchen.html">Cooking</a></li>
+              <li class="sub-title"><a href="./kitchen.html">Baking</a></li>
+              <li class="sub-title"><a href="./kitchen.html">Cleaning</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./decor.html" class="title">Decor</a>
+            <ul class="sub-nav hidden">
+              <li class="sub-title"><a href="./decor.html">Lighting</a></li>
+              <li class="sub-title"><a href="./decor.html">Frames</a></li>
+              <li class="sub-title"><a href="./decor.html">Paint</a></li>
+            </ul>
+          </li>
+          <button class="close"><i class="fa-solid fa-angle-up"></i></button>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Login Container -->
+    <main id="login">
+      <div class="login-container">
+        <section class="login-a">
+          <div class="message">
+            <h1 class="section-heading">Welcome back!</h1>
+            <p class="para-primary">
+              Sign in to track orders, save products and more :)
+            </p>
+          </div>
+        </section>
+
+        <section class="login-b">
+          <h3 class="section-title">Log In</h3>
+          <form class="form">
+            <input type="text" placeholder="Username or email" />
+            <input type="password" placeholder="Password" />
+          </form>
+          <p class="para-secondary">Forgot password?</p>
+          <button class="btn btn-primary btn-login">Log In</button>
+          <p class="para-secondary">
+            Haven't got an account yet? <a href="#">Create an account</a>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Cart Preview -->
+    <section class="index-preview hidden cart-preview">
+      <p class="preview-text-cart preview-text">No items in your cart yet :(</p>
+      <ul class="index-preview-list cart-preview-list"></ul>
+    </section>
+    <button class="btn btn-checkout-preview hidden">Checkout</button>
+
+    <!-- Footer -->
+    <section id="footer" class="padding-y">
+      <div class="footer-a">
+        <div class="footer-block">
+          <h4 class="section-title">Customer Service</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">Customer Services</li>
+            <li class="footer-list-item">Contact Us</li>
+            <li class="footer-list-item">Returns & Refunds</li>
+            <li class="footer-list-item">Delivery Information</li>
+            <li class="footer-list-item">Pricing Policy</li>
+            <li class="footer-list-item">Finance Options</li>
+            <li class="footer-list-item">Book Kitchen Consultation</li>
+            <li class="footer-list-item">Book Fittings for Wardrobes</li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="section-title">Resources</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">In Store Services</li>
+            <li class="footer-list-item">Brochures</li>
+            <li class="footer-list-item">Our Brands</li>
+            <li class="footer-list-item">DIY Safety Tips</li>
+            <li class="footer-list-item">FAQs</li>
+            <li class="footer-list-item">Cookie Policy</li>
+            <li class="footer-list-item">Terms & Conditions</li>
+            <li class="footer-list-item">Accessibility</li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <h4 class="section-title">About Us</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">About Us</li>
+            <li class="footer-list-item">Our Team</li>
+            <li class="footer-list-item">Our History</li>
+            <li class="footer-list-item">Growing Responsiblity</li>
+            <li class="footer-list-item">Pricing Policy</li>
+            <li class="footer-list-item">Statements & POlicies</li>
+            <li class="footer-list-item">Careers</li>
+            <li class="footer-list-item">Student Discount</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-b padding-y">
+        <form class="form">
+          <h4 class="section-title">Subscribe to our newsletter</h4>
+          <div class="form-data">
+            <input type="email" placeholder="Enter your email..." id="input" />
+            <button class="btn btn-subscribe btn-primary">Subscribe</button>
+          </div>
+        </form>
+        
+        <!-- Subscription Success Message -->
+        <div class="subscription-success-message">
+          <div>
+            <h4 class="title"><i class="fa-solid fa-check"></i>Subscribed</h4>
+            <p class="para-primary">Check email for confirmation link!</p>
+          </div>
+          <div><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="footer-c padding-y">
+        <p class="para-secondary">Copyright &copy; 2022 CoZy Inc.</p>
+        <img src="./img/payment.png" alt="Payment Options" />
+        <ul class="social-media-links">
+          <li class="link"><i class="fa-brands fa-twitter"></i></li>
+          <li class="link"><i class="fa-brands fa-instagram"></i></li>
+          <li class="link"><i class="fa-brands fa-pinterest"></i></li>
+          <li class="link"><i class="fa-brands fa-facebook"></i></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
